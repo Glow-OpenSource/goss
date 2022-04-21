@@ -1,3 +1,3 @@
-module.exports = function(cmd, argv, cb){
-    return cb()
-}
+module.exports = function (cmd, argv, cb) {
+	return cb();
+};

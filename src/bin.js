@@ -20,12 +20,14 @@ process.env.cli = Object.keys(require("../package.json").bin)[0];
 				return "help";
 			case "--help":
 				return "help";
+			case "-help":
+				return "help";
 			case "i":
 				return "install";
-            case "about":
-                return "version";//"info";
-            case "info":
-                return "version"
+			case "about":
+				return "version"; //"info";
+			case "info":
+				return "version";
 			default:
 				return it;
 		}
