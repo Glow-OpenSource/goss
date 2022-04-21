@@ -5,10 +5,11 @@ function cmds() {
 		build: `ShourtCut of ${require("chalk").green("npm run build")}`,
 		dev: `ShourtCut of ${require("chalk").green("npm run dev")}`,
 		install: `ShourtCut of ${require("chalk").green("npm install")}`,
+		pack: `ShourtCut of ${require("chalk").green("npm pack")}`,
 		update: `Updates ${require("chalk").green(process.env.cli)}`,
 		init: `Installs ${process.env.name} typed package init`,
 		version: "Shows the version",
-		info: "Shows some info",
+		info: "Shows some info"
 	};
 }
 

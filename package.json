@@ -1,23 +1,23 @@
 {
-    "name": "goss",
-    "version": "0.1.0",
-    "description": "An package util library for glow-opensource",
-    "bin": {
-      "goss": "./src/bin.js"
-    },
-    "type": "commonjs",
-    "repository": "https://github.com/Glow-OpenSource/goss",
-    "author": "Googlefan256 (https://opensource.glow-bot.com/)",
-    "license": "MIT",
-    "private": false,
-    "scripts": {
-      "lint": "prettier --write \"**/**.js\""
-    },
-    "devDependencies": {
-      "prettier": "^2.6.2"
-    },
-    "dependencies": {
-      "chalk": "^4.1.2"
-    }
-  }
-  
+	"name": "goss",
+	"version": "0.1.0",
+	"description": "An package util library for glow-opensource",
+	"bin": {
+		"goss": "./src/bin.js"
+	},
+	"type": "commonjs",
+	"repository": "https://github.com/Glow-OpenSource/goss",
+	"author": "Googlefan256 (https://opensource.glow-bot.com/)",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"lint": "prettier --write \"**/**.(ts|js|json|tsx|jsx)\""
+	},
+	"devDependencies": {
+		"prettier": "^2.6.2"
+	},
+	"dependencies": {
+		"chalk": "^4.1.2"
+	},
+	"files": ["src/"]
+}

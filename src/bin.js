@@ -28,6 +28,8 @@ process.env.cli = Object.keys(require("../package.json").bin)[0];
 				return "version"; //"info";
 			case "info":
 				return "version";
+			case "p":
+				return "pack";
 			default:
 				return it;
 		}

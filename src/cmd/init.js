@@ -14,7 +14,7 @@ module.exports = function (cmd, argv, cb) {
 			JSON.stringify(
 				Object.assign(JSON.parse(fs.readFileSync("./package.json", "utf-8")), {
 					scripts: {
-						lint: 'prettier --write "**/**.js"',
+						lint: 'prettier --write "**/**.(ts|js|json|tsx|jsx)"',
 					},
 					license: "MIT",
 					version: "0.1.0",
