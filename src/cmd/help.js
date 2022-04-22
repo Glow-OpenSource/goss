@@ -9,7 +9,8 @@ function cmds() {
 		update: `Updates ${require("chalk").green(process.env.cli)}`,
 		init: `Installs ${process.env.name} typed package init`,
 		version: "Shows the version",
-		info: "Shows some info"
+		info: "Shows some info",
+		import: "Create an mjs&cjs importer endpoint",
 	};
 }
 
