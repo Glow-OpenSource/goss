@@ -1,5 +1,5 @@
 module.exports = function (cmd, argv, cb) {
-	var { join } = require("path");
+	var { join, resolve } = require("path");
 	var color = require("../util/color");
 	var { existsSync, writeFileSync, readFileSync } = require("fs");
 	var _path = argv[0] || "dist";
@@ -11,7 +11,7 @@ module.exports = function (cmd, argv, cb) {
 	if (!existsSync(base + ".mjs")) {
 		writeFileSync(
 			base + ".mjs",
-			`export * from "./index.js";import _m from "./index.js";export default Object.assign(_m.default || {},_m);`
+			`import _m from "./index.js";export default Object.assign(_m.default || {},_m);${Object.keys(require(resolve(base + ".js"))).filter(x => x !== "default").map( x => `export const ${x}=_m.${x}`).join(";")};`
 		);
 		color(
 			["blue", "Info: "],
