@@ -1,6 +1,6 @@
 {
    "name": "goss",
-   "version": "0.1.3",
+   "version": "0.1.4",
    "description": "An package util library for glow-opensource",
    "bin": {
       "goss": "./src/bin.js"
